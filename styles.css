@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: #2d5566;
+    background: linear-gradient(180deg,rgba(45, 85, 102, 1) 0%, rgba(0, 140, 255, 1) 50%, rgba(10, 201, 240, 1) 100%);
+    height: 100vh;
+    width: 100vw;
+}
+
+#stars{
+    width: 100vw;
+    height: 50vh;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+@keyframes StarAnimation {
+    0% {
+        scale: 1;
+        opacity: 0.7;
+    }
+    100% {
+        scale: 1.5;
+        opacity: 1;
+    }
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background: white;
+  display: none;
+  clip-path: polygon(32% 37%, 48% 3%, 67% 37%, 100% 51%, 69% 65%, 50% 100%, 32% 64%, 0 50%);
+  animation-name: StarAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
