@@ -1,6 +1,6 @@
-function getStarPosition(max_x, max_y) {
-    x = Math.floor(Math.random() * max_x);
-    y = Math.floor(Math.random() * max_y);
+function getStarPosition() {
+    x = Math.floor(Math.random() * 100);
+    y = Math.floor((Math.random() * 100)/2);
     return [x, y];
 }
 
@@ -9,9 +9,9 @@ function GenerateStars() {
         star = document.createElement("div");
         star.classList.add("star");
         star.style.display = "block";
-        position = getStarPosition(document.getElementById("stars").offsetWidth, document.getElementById("stars").offsetHeight);
-        star.style.left = position[0] + "px";
-        star.style.top = position[1] + "px";
+        position = getStarPosition();
+        star.style.left = position[0] + "%";
+        star.style.top = position[1] + "%";
         star.style.position = "absolute";
         star.style.animationDelay = Math.random() * 5 + "s";
         document.getElementById("stars").appendChild(star);

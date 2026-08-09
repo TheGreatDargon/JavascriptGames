@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    margin: 0;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+}
+
+h1, p, span {
+    color: yellow;
+}
