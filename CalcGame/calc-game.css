@@ -31,7 +31,7 @@ main {
     background-color: grey;
     font-size: clamp(1rem, 15cqi, 5rem);
     white-space: nowrap;
-    direction: rtl;
+    text-align: right;
 
 }
 

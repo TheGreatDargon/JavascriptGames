@@ -1,15 +1,15 @@
 function getStarPosition() {
-    x = Math.floor(Math.random() * 100);
-    y = Math.floor((Math.random() * 100)/2);
+    let x = Math.floor(Math.random() * 100);
+    let y = Math.floor((Math.random() * 100)/2);
     return [x, y];
 }
 
 function GenerateStars() {
     for (let i = 0; i < 75; i++) {
-        star = document.createElement("div");
+        let star = document.createElement("div");
         star.classList.add("star");
         star.style.display = "block";
-        position = getStarPosition();
+        let position = getStarPosition();
         star.style.left = position[0] + "%";
         star.style.top = position[1] + "%";
         star.style.position = "absolute";
